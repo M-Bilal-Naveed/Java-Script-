@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leap Year Calculator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+    }
+    .container {
+      max-width: 400px;
+      margin: 0 auto;
+      border: 1px solid #ccc;
+      padding: 20px;
+      border-radius: 10px;
+      background-color: #f9f9f9;
+    }
+    input, button {
+      margin: 10px 0;
+      padding: 10px;
+      width: 100%;
+      font-size: 16px;
+    }
+    .result {
+      margin-top: 20px;
+      font-size: 20px;
+      color: #007BFF;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Leap Year Calculator</h1>
+    <input type="number" id="year" placeholder="Enter a Year" required>
+    <button onclick="checkLeapYear()">Check Leap Year</button>
+    <div class="result" id="result"></div>
+  </div>
+
+  <script>
+    function checkLeapYear() {
+      const year = document.getElementById('year').value;
+
+      if (!year || year <= 0) {
+        document.getElementById('result').innerHTML = "Please enter a valid year!";
+        return;
+      }
+
+      // Logic for checking leap year
+      let isLeapYear = false;
+
+      if (year % 4 === 0) {
+        if (year % 100 === 0) {
+          if (year % 400 === 0) {
+            isLeapYear = true;
+          }
+        } else {
+          isLeapYear = true;
+        }
+      }
+
+      // Display result
+      document.getElementById('result').innerHTML = isLeapYear
+        ? `${year} is a Leap Year! 🎉`
+        : `${year} is NOT a Leap Year.`;
+    }
+  </script>
+</body>
+</html>

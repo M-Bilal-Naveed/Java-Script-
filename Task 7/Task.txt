@@ -1,0 +1,2 @@
+- Take Dog Age as an input from user
+- And calculate it’s human age using following formula:

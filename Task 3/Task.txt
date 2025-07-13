@@ -1,0 +1,3 @@
+- Take Text Input from User
+- Tell the User about length of entered string
+- Tell the User about remaining characters (Total String Size can be 240 chars)

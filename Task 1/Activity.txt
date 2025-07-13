@@ -1,0 +1,3 @@
+- Take an Input from User
+- Save it in Variable
+- Display the Value of Variable in Alert/Output

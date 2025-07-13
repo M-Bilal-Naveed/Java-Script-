@@ -1,0 +1,4 @@
+Create a function that add numbers in an array (starting from number 01) 
+on each function call with following rules. 
+Instead of adding 3 and 5 it will add “Fizz” and “Buzz” in the array 
+respectively. And instead of adding 15 it will add “FizzBuzz” in the array.

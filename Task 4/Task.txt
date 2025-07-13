@@ -1,0 +1,3 @@
+- Consider Previous Task
+- Show the string of 100 characters only and slice the remaining string.
+- The sliced string should be shown in an alert message.

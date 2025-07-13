@@ -1,0 +1,5 @@
+- Take an name of user as an input
+- Capitalize the Name (Only first letter)
+- Display the name with greetings to user (as an alert)
+
+Hint: JS do not have builtin function to complete above task. However, we can use use existing knowledge to complete this task.

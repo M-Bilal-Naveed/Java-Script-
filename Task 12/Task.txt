@@ -1,0 +1,4 @@
+• Create an Array containing guest list of a function 
+• Take input from user (using Prompt) 
+• Check either his/her name is in Guest List 
+• If yes then show a welcome message, otherwise show an Apology

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FizzBuzz Generator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 20px;
+    }
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      border: 1px solid #ccc;
+      padding: 20px;
+      border-radius: 10px;
+      background-color: #f9f9f9;
+    }
+    button {
+      margin: 10px 0;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .result {
+      margin-top: 20px;
+      font-size: 16px;
+      text-align: left;
+      max-height: 400px;
+      overflow-y: auto;
+      border: 1px solid #ccc;
+      padding: 10px;
+      background-color: #fff;
+    }
+    .result p {
+      margin: 5px 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>FizzBuzz Generator</h1>
+    <button onclick="generateFizzBuzz()">Generate FizzBuzz (1-200)</button>
+    <div class="result" id="result"></div>
+  </div>
+
+  <script>
+    function generateFizzBuzz() {
+      const resultContainer = document.getElementById('result');
+      resultContainer.innerHTML = ""; // Clear previous results
+
+      for (let i = 1; i <= 200; i++) {
+        let result;
+        
+        if (i % 3 === 0 && i % 5 === 0) {
+          result = `${i}: FizzBuzz`;
+        } else if (i % 3 === 0) {
+          result = `${i}: Fizz`;
+        } else if (i % 5 === 0) {
+          result = `${i}: Buzz`;
+        } else {
+          result = `${i}: ${i}`;
+        }
+
+        const paragraph = document.createElement('h1');
+        paragraph.textContent = result;
+        resultContainer.appendChild(paragraph);
+      }
+    }
+  </script>
+</body>
+</html>

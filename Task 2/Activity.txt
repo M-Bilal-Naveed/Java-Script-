@@ -1,0 +1,7 @@
+Swap 2 Numbers
+
+Instructions:
+1. Declare two variables with initial values (e.g., let a = 5; let b = 10;).
+2. Swap the values of these two variables without using a third variable.
+3. Print the values of the variables before and after swapping to the console.
+4. Ensure the program works for any initial values assigned to the variables.
